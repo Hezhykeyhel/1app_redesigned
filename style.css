@@ -1,0 +1,420 @@
+body{
+    font-family: 'Arial', Helvetica, sans-serif;
+    width: 98.5%;
+    background-color: rgb(245, 235, 235);
+    
+
+}
+.logo{
+    width: 20%;
+    height: 180px;
+    text-align: center;
+    border-radius: 30px;
+}
+#container{
+    text-align: center;
+
+}
+h2, h4, p, a{
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+input{
+    background: rgb(240, 223, 223);
+    border: solid 2px rgb(238, 104, 238);
+    width: 50px;
+    outline: none;
+    list-style-type: disc;
+    height: 50px;
+    font-size:4em;
+    color: rgb(45, 207, 45);
+    text-align: center;
+    
+}
+button{
+    padding: 1em;
+    background: rgb(88, 4, 46);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 50%;
+
+}
+button:hover{
+    background-color: rgb(231, 124, 174);
+    cursor: pointer;
+
+}
+a{
+    
+    font-weight: bolder;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    
+}
+
+.nav-bar{
+    background: rgb(88, 4, 46);
+    width: 100%;
+}
+
+.bar, .bell{
+    font-size:35px;
+    margin-top: 20px;
+}
+.bar{
+    position: relative;
+    right: 50px;
+    
+    
+}
+.bell{
+    position:absolute;
+    left: 98%;
+    margin-left:-30px;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3px;
+}
+label #btn{
+    left: 10px;
+    top: 20px;
+    font-size: 35px;
+    color: #fff;
+    padding: 6px 12px;
+    
+}
+#cancel{
+    z-index: 1111;
+    left: -55px;
+    top: 15px;
+    font-size: 20px;
+    padding: 4px 9px;
+    transition: all .7s ease-in;
+    background: rgb(136, 41, 88);
+    
+}
+#cancel:hover{
+    background-color: rgb(247, 210, 250);
+
+}
+.sidebar{
+    position: fixed;
+    width: 228px;
+    left: -250px;
+    top: 15px;
+    height: 100%;
+    line-height: 35px;
+    z-index: 1;
+    background-color: rgb(242, 205, 247);
+    background-image: url(/Images/logo.png);
+    background-repeat: no-repeat;
+    background-blend-mode:soft-light;
+    background-size: 225px 580px;
+    font-weight:500;
+    background-position: center;
+    transition: all 1s ease-in;
+}
+
+#check:checked ~ .sidebar{
+    left: 8px;
+    
+}
+#check:checked ~ label #btn{
+    left: 100px;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+#check:checked ~ label #cancel{
+    left: 200px;
+    transition: all 1s ease-in;
+    
+}
+
+.but{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 70%;
+    background-color: rgb(88, 4, 46);
+}
+h5{
+    color: rgb(88, 4, 46);
+}
+h6{
+    position: relative;
+    right: 10px;
+}
+header{
+    position: relative;
+    right:0px;
+    bottom: 8px;
+    color: rgb(88, 4, 46);
+    text-align: center;
+    line-height: 5px;
+    background-color: rgb(208, 201, 212);
+    padding: 1rem;
+}
+.user{
+    font-size:60px;
+    color:grey;
+}
+.sidebar a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(88, 4, 46);
+    display: block;
+}
+.first-container{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+hr{
+    border:solid 0.2px rgba(216, 207, 207, 0.507);
+    text-decoration:none;
+    outline: none;
+    
+    
+}
+#morning{
+    position: relative;
+    left: 15px;
+    bottom: 15px;
+}
+.second-container{
+    color: white;
+    
+}
+.sec-con{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 12px;
+}
+.wallet{
+    position: relative;
+    left: 15px; 
+    bottom: 20px;   
+}
+.wallet2{
+    position: absolute;
+    left:65%;
+    bottom: 0%;
+}
+.wallet, .wallet2{
+    display:flex;
+    flex-direction: column;
+    line-height: 0.5;
+}
+.butt1, .butt2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 5px;
+    bottom: 10px;
+    left: 7px;
+    background-color: white;
+    color: rgb(88, 4, 46);
+    font-size:medium;
+    font-weight: bold;
+    width: 48%;
+}
+.butt1{
+    margin-right: 0.1em;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+.img1{
+    width: 100%;
+    border-radius: 20px;
+    height: 300px;
+    position: relative;
+    bottom: 10px;
+}
+.img1, .happenings, .second-container .bottom-layer, .butt1, .butt2, .footer{
+    animation-duration: 8s;
+    animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      margin-top: 50vw;
+      
+    }
+    to {
+      margin-left: 0%;
+      
+    }
+  }
+  h5, h6{
+    animation-duration: 9s;
+    animation-name: scroll;
+  }
+  
+  
+  @keyframes scroll {
+    from {
+      margin-top: 50vw;
+      
+    }
+    to {
+      margin-left: 0%;
+      
+    }
+  }
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    right: 80px;
+    bottom: 10px;
+}
+#quick{
+    position: relative;
+    right: 20%;
+
+}
+i{
+    cursor: pointer;
+}
+.angle{
+    font-size: larger;
+    margin-top: 15px;
+    position:absolute;
+    left: 98%;
+    margin-left:60px;
+    bottom: 1px;
+    cursor: pointer;
+    background-color: rgb(231, 140, 240);
+    padding: 0.4em;
+    border-radius: 30px;
+    
+
+}
+.angle:hover{
+    background-color: rgb(233, 180, 206);
+}
+.service{
+    display: flex;
+    justify-content:space-around;    
+}
+.airtime{
+    display: flex;
+    justify-content:space-around;    
+    position: relative;
+    left: 6px;
+    word-spacing: 65px;
+    font-size:medium;
+    bottom: 10px;
+    
+}
+.quick-serve{  
+    color: white;
+    position: relative;
+    border-radius: 20px;
+    background:rgb(88, 4, 46);
+    padding: 0.8em;
+    height: 20px;
+}
+.quick-serve:hover{
+    cursor: pointer;
+    background-color:rgb(211, 98, 98);
+    transform: translateY(-5px);
+    transition: ease-in all 0.5s;
+}
+.serve{
+    position: relative;
+    top: 15px;
+    font-size:medium;
+    font-family: 'Arial', Helvetica, sans-serif;
+    width: 100%;
+}
+.app-phone{
+    width: 50px;
+    height: 50px;
+    border: solid rgb(88, 4, 46);
+    padding:0.8em;
+    border-radius: 28px;
+}
+#app-p{
+    background-color:rgb(245, 197, 221);
+    padding: 0.6em;
+    border-radius: 20px;
+    height: 90px;
+}
+.happenings{
+    position: relative;
+    left: 100px;
+    bottom:80px;
+}
+#app-p:hover{
+    background: rgb(236, 167, 199);
+    cursor: pointer;
+}
+.style{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+h4{
+    margin-left: 10px;
+}
+.lifestyle{
+    background:rgb(221, 216, 216);
+    width: 98%;
+    padding-top: 1em;
+    text-align: center;
+    
+    color: rgb(88, 4, 46);
+}
+.lifestyle:hover{
+    cursor: pointer;
+    background-color: rgb(250, 223, 250);
+    transform: translateY(-20px);
+    transition: all ease-in 0.5s;
+}
+h5{
+    color: black;
+}
+.footer{
+ display: flex;   
+ flex-direction: row;
+ justify-content: space-around;
+ color:rgb(88, 4, 46);
+ position: relative;
+ top: 10px;
+
+}
+.bottom-layer{
+    display: flex;   
+ flex-direction: row;
+ justify-content: space-around;
+ color:rgb(88, 4, 46);
+ position: relative;
+ top: 10px;
+ bottom: 20px;
+ right: 6px;
+}
+#bottom-line{
+    background-color: rgb(247, 195, 221);
+    border-radius: 30px;
+}
+.last-div:hover{
+    background-color: rgb(173, 107, 173);
+    padding: 0.4em;
+    border-radius: 40px;
+}
