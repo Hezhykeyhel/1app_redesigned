@@ -21,7 +21,7 @@ h2, h4, p, a{
 input{
     background: rgb(240, 223, 223);
     border: solid 2px rgb(238, 104, 238);
-    width: 50px;
+    width: 70%;
     outline: none;
     list-style-type: disc;
     height: 50px;
