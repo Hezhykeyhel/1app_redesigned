@@ -179,6 +179,8 @@ header{
     color: white;
     display: flex;
     justify-content: space-around;
+    margin:0;
+    padding:0;
 
 }
 
@@ -203,6 +205,8 @@ hr{
     flex-direction: row;
     position: relative;
     bottom: 12px;
+    margin:0;
+    padding:0;
 }
 .wallet{
     position: relative;
