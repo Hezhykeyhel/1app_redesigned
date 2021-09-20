@@ -247,8 +247,8 @@ hr{
     position: relative;
     bottom: 10px;
 }
-.img1, .happenings, .second-container .bottom-layer, .butt1, .butt2, .footer{
-    animation-duration: 8s;
+.img1, .happenings, .nav-bar .bottom-layer, .butt1, .butt2, .footer{
+    animation-duration: 4s;
     animation-name: slidein;
   }
   @keyframes slidein {
@@ -262,7 +262,7 @@ hr{
     }
   }
   h5, h6{
-    animation-duration: 9s;
+    animation-duration: 4s;
     animation-name: scroll;
   }
   
