@@ -61,7 +61,6 @@ a{
 
 .nav-bar{
     background: rgb(88, 4, 46);
-    width: 100%;
 
 }
 
@@ -253,12 +252,12 @@ hr{
     bottom: 10px;
 }
 .img1, .happenings, .nav-bar .bottom-layer, .butt1, .butt2, .footer{
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-name: slidein;
   }
   @keyframes slidein {
     from {
-      margin-top: 50vw;
+      margin-top: 20vw;
       
     }
     to {
@@ -274,7 +273,7 @@ hr{
   
   @keyframes scroll {
     from {
-      margin-top: 50vw;
+      margin-top: 30vw;
       
     }
     to {
